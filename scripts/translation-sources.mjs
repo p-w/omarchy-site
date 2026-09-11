@@ -2,8 +2,7 @@ import { existsSync, readFileSync, readdirSync } from 'node:fs'
 import path from 'node:path'
 import ts from 'typescript'
 
-// Runtime translateHtml uses these exact innerHTML keys, including whitespace.
-const PROSE = /<(p|h2|h3|figcaption|li)\b([^>]*)>([\s\S]*?)<\/\1>/g
+import { PROSE } from '../src/lib/prose.ts'
 const literal = (node) =>
   node && (ts.isStringLiteral(node) || ts.isNoSubstitutionTemplateLiteral(node))
 const unwrap = (node) => {
@@ -152,18 +151,12 @@ export function collectSources(root = process.cwd()) {
   for (const [slug, page] of Object.entries(
     readJson('src/data/pages.json', {}),
   )) {
-    // Teams is fully React-rendered. Meetups still imports its authored rules,
-    // but replaces the old calendar and page heading with React components.
-    if (slug === 'teams') continue
-    if (slug !== 'meetups') add(page.title)
-    const pageHtml =
-      slug === 'meetups'
-        ? (page.html ?? '').replace(
-            /<div class="meetups__calendar">[\s\S]*?<\/div>\s*/,
-            '',
-          )
-        : (page.html ?? '')
-    const html = pageHtml.replace(
+    // These routes render dedicated React pages, not the imported page HTML.
+    if (['teams', 'meetups'].includes(slug)) continue
+    add(page.title)
+    add(page.seoTitle)
+    add(page.description)
+    const html = (page.html ?? '').replace(
       /<ul\b[^>]*class="[^"]*\bpatrons__supporters\b[^"]*"[^>]*>[\s\S]*?<\/ul>/g,
       '',
     )
