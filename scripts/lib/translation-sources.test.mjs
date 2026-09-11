@@ -55,7 +55,10 @@ test('authored blocks preserve exact HTML and exclude people and product heading
       html: `<h2>Support us</h2><p>${block}</p><p><img src="/picture.webp"></p><p><strong> </strong></p><h3 class="member__name">Donor Name</h3><p class="member__meta">Product Name</p><ul class="patrons__supporters"><li>Another Donor</li></ul><h3 class="resident__name">Artist Name</h3><h2 class="sponsorship__name">Product</h2>`,
     },
     teams: { title: 'Unused imported title', html: '<p>Person Name</p>' },
-    meetups: { title: 'Unused imported title', html: '<p>Old calendar</p>' },
+    meetups: {
+      title: 'Unused imported title',
+      html: '<div class="meetups__calendar"><p>Old calendar</p></div>',
+    },
   })
   assert.deepEqual(collectSources(root), {
     messages: ['Our patrons'],
