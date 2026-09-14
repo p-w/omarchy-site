@@ -144,5 +144,13 @@
   "Full-time Omacom Foundation employee": "Vollzeit bei der Omacom Foundation",
   "Multi-year sponsorships for the projects Omarchy is built on - Hyprland and mise - so the people behind them can work without thinking about fundraising.": "Mehrjährige Förderungen für die Projekte, auf denen Omarchy aufbaut - Hyprland und mise -, damit die Menschen dahinter arbeiten können, ohne an Geldbeschaffung zu denken.",
   "Quickshell is the desktop construction kit behind Omarchy Shell. It provides the building blocks for bars, menus, notifications, widgets, and lock screens, using QML to turn ideas into interfaces that update as you work. That flexibility lets people and their agents build plugins and shape the desktop around their needs. Its creator, outfoxxed, is a full-time Omacom Foundation employee as Head of Omarchy Shell and a member of Omarchy Core, working to make the shell and its foundations faster, more reliable, and easier to extend.": "Quickshell ist der Desktop-Baukasten hinter Omarchy Shell. Er liefert die Bausteine für Leisten, Menüs, Benachrichtigungen, Widgets und Sperrbildschirme und macht mit QML aus Ideen Oberflächen, die sich beim Arbeiten mitverändern. Diese Flexibilität erlaubt es Menschen und ihren Agenten, Plugins zu bauen und den Desktop nach den eigenen Bedürfnissen zu formen. Sein Schöpfer outfoxxed arbeitet Vollzeit bei der Omacom Foundation als Leiter von Omarchy Shell und ist Mitglied von Omarchy Core. Er macht die Shell und ihre Grundlagen schneller, zuverlässiger und leichter erweiterbar.",
-  "<a href=\"/news/2026/09/omacom-foundation-hires-outfoxxed/\">Read the announcement</a> &middot; <a href=\"https://quickshell.org/\">Quickshell</a> by <a href=\"https://x.com/outfoxxedd\">outfoxxed</a>": "<a href=\"/news/2026/09/omacom-foundation-hires-outfoxxed/\">Zur Ankündigung</a> &middot; <a href=\"https://quickshell.org/\">Quickshell</a> von <a href=\"https://x.com/outfoxxedd\">outfoxxed</a>"
+  "<a href=\"/news/2026/09/omacom-foundation-hires-outfoxxed/\">Read the announcement</a> &middot; <a href=\"https://quickshell.org/\">Quickshell</a> by <a href=\"https://x.com/outfoxxedd\">outfoxxed</a>": "<a href=\"/news/2026/09/omacom-foundation-hires-outfoxxed/\">Zur Ankündigung</a> &middot; <a href=\"https://quickshell.org/\">Quickshell</a> von <a href=\"https://x.com/outfoxxedd\">outfoxxed</a>",
+  "16B": "16B",
+  "256B": "256B",
+  "2K": "2K",
+  "8K": "8K",
+  "Each contributing $16 or more.": "Mit jeweils 16 USD oder mehr.",
+  "Each contributing $2,048 or more.": "Mit jeweils 2.048 USD oder mehr.",
+  "Each contributing $256 or more.": "Mit jeweils 256 USD oder mehr.",
+  "Each contributing $8,192 or more.": "Mit jeweils 8.192 USD oder mehr."
 }
